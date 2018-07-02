@@ -4,13 +4,6 @@
 #include "File.c"
 
 int sock;
-char command[1500] = "MUSIC 03689338";
-
-uint16_t seq;
-uint8_t msg[1500];
-uint8_t end[1500] = "END";
-
-struct data{
-    uint16_t seq;
-    uint8_t payload[];
-};
+char command[1500] = "CONNECT 6.0 http://kufstein2.lmt.ei.tum.de/short1/";
+char GET[1500];
+char msg[1500];
