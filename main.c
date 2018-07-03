@@ -18,16 +18,12 @@ void main(){
       printf("Exiting...");
       break;
     }
-    
-
     //Check for MPD
     if(msg[2]=='D'){
       printf("%s\n",msg);
       total = GetNum(msg);
       printf("%d\n",total); 
     }
-
-  
 
     //Check for DWN
     if(msg[2]=='N'){
